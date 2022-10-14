@@ -10,9 +10,13 @@ package paquetico;
  */
 public class Gato extends ClasePadre {
 
+    //Declarating the Special Atribute of the Cat
+    private String toxoPlasmosis;
     /**
      * @return the toxoPlasmosis
      */
+    
+    //Getters & Setters Functions
     public String getToxoPlasmosis() {
         return toxoPlasmosis;
     }
@@ -24,7 +28,7 @@ public class Gato extends ClasePadre {
         this.toxoPlasmosis = toxoPlasmosis;
     }
     
-    private String toxoPlasmosis;
+    
 
     public Gato( String nombre, String raza, String color, int edad,String toxoPlasmosis) {
         super(nombre, raza, color, edad);

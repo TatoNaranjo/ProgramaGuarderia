@@ -295,7 +295,7 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
+    //Creating the lista Class Constructor.
     Lista log = new Lista();
     
     private void nombreAnimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreAnimalActionPerformed
@@ -303,8 +303,11 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_nombreAnimalActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-String tipoAnimal="";
+//Creating the temporal variables.
+ String tipoAnimal="";
  String especial = "";
+ //Comparing the input of the user to Check if this animal is a cat or a dog.
+ 
         if(botonGato.isSelected()==true) {
             tipoAnimal="Gato";
              especial = "¿Tiene ToxoPlasmosis?: "+textoEspecial.getText();
@@ -314,7 +317,7 @@ String tipoAnimal="";
             tipoAnimal="Perro";
             especial = "El nivel de Entrenamiento del Perro es: "+(int)nvl.getValue();
         }
-        
+        //Executing the Imprimir Lista Function
          lista.setText(log.imprimirLista(tipoAnimal,nombreAnimal.getText(),textoRaza.getText(),textoColor.getText(),(int)textoEdad.getValue(),especial));
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -332,12 +335,13 @@ String tipoAnimal="";
     }//GEN-LAST:event_posicionActionPerformed
 
     private void btEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEliminarActionPerformed
-
+    //Executing the EliminarPosición Function
         lista.setText(log.eliminarPosicion(Integer.parseInt(posicion.getText())));
     }//GEN-LAST:event_btEliminarActionPerformed
 
     private void botonPerroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPerroActionPerformed
-   textoPlamosisxd.hide();
+    //Setting up the atributes of Texts to adapt the GUI to the Situation
+    textoPlamosisxd.hide();
    textoEspecial.hide();
    if(botonPerro.isSelected()==false){
     textoPlamosisxd.show();
@@ -346,6 +350,7 @@ String tipoAnimal="";
     }//GEN-LAST:event_botonPerroActionPerformed
 
     private void botonGatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonGatoActionPerformed
+    //Setting up the atributes of Texts to adapt the GUI to the Situation
      labelPerro.hide();
      nvl.hide();
      if(botonGato.isSelected()==false){
@@ -355,22 +360,27 @@ String tipoAnimal="";
     }//GEN-LAST:event_botonGatoActionPerformed
 
     private void nombreAnimalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nombreAnimalMouseClicked
-     nombreAnimal.setText("");
+    //Setting up the atributes of Texts to adapt the GUI to the Situation
+        nombreAnimal.setText("");
     }//GEN-LAST:event_nombreAnimalMouseClicked
 
     private void textoRazaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoRazaMouseClicked
-       textoRaza.setText("");
+      //Setting up the atributes of Texts to adapt the GUI to the Situation
+        textoRaza.setText("");
     }//GEN-LAST:event_textoRazaMouseClicked
 
     private void textoColorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoColorMouseClicked
+      //Setting up the atributes of Texts to adapt the GUI to the Situation
         textoColor.setText("");
     }//GEN-LAST:event_textoColorMouseClicked
 
     private void textoEspecialMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoEspecialMouseClicked
-       textoEspecial.setText("");
+    //Setting up the atributes of Texts to adapt the GUI to the Situation
+        textoEspecial.setText("");
     }//GEN-LAST:event_textoEspecialMouseClicked
 
     private void posicionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_posicionMouseClicked
+     //Setting up the atributes of Texts to adapt the GUI to the Situation
         posicion.setText("");
     }//GEN-LAST:event_posicionMouseClicked
 

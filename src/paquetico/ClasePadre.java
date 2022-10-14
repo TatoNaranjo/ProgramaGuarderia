@@ -1,14 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package paquetico;
 
 public class ClasePadre {
-
-    /**
-     * @return the nombre
-     */
+    
+   //Variable Declaration
+    
+       private String nombre;
+    private String raza;
+    private String color;
+    private int edad;
+    
+//Creating the Getters & Setters
     public String getNombre() {
         return nombre;
     }
@@ -61,10 +63,7 @@ public class ClasePadre {
     public void setEdad(int edad) {
         this.edad = edad;
     }
-    private String nombre;
-    private String raza;
-    private String color;
-    private int edad;
+ 
 
     public ClasePadre() {
     }
